@@ -41,6 +41,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import minabsn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-minabsn@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-minabsn/tags). For example,
+
+```javascript
 import minabsn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-minabsn@v0.0.1-deno/mod.js';
 ```
 
@@ -102,7 +107,7 @@ var v = minabsn();
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import minabsn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-minabsn@v0.0.1-deno/mod.js';
+import minabsn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-minabsn@deno/mod.js';
 
 var x;
 var y;
