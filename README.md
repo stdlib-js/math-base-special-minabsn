@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import minabsn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-minabsn@esm/index.mjs';
+import minabsn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-minabsn@v0.1.0-esm/index.mjs';
 ```
 
 #### minabsn( \[x\[, y\[, ...args]]] )
@@ -118,7 +118,7 @@ var v = minabsn();
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import minabsn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-minabsn@esm/index.mjs';
+import minabsn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-minabsn@v0.1.0-esm/index.mjs';
 
 var x;
 var y;
