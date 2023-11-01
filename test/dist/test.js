@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,107 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isnan = require( '@stdlib/math-base-assert-is-nan' );
-var isPositiveZero = require( '@stdlib/math-base-assert-is-positive-zero' );
-var PINF = require( '@stdlib/constants-float64-pinf' );
-var NINF = require( '@stdlib/constants-float64-ninf' );
-var minabsn = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof minabsn, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `NaN` if provided a `NaN`', function test( t ) {
-	var v;
-
-	v = minabsn( NaN, 3.14 );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
-
-	v = minabsn( 3.14, NaN );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
-
-	v = minabsn( NaN );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
-
-	v = minabsn( 3.14, 4.2, NaN );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
-
-	t.end();
-});
-
-tape( 'the function returns `+infinity` if not provided any arguments', function test( t ) {
-	var v = minabsn();
-	t.strictEqual( v, PINF, 'returns +infinity' );
-	t.end();
-});
-
-tape( 'the function returns a correctly signed zero', function test( t ) {
-	var v;
-
-	v = minabsn( +0.0, -0.0 );
-	t.strictEqual( isPositiveZero( v ), true, 'returns +0' );
-
-	v = minabsn( -0.0, +0.0 );
-	t.strictEqual( isPositiveZero( v ), true, 'returns +0' );
-
-	v = minabsn( -0.0, -0.0 );
-	t.strictEqual( isPositiveZero( v ), true, 'returns +0' );
-
-	v = minabsn( +0.0, +0.0 );
-	t.strictEqual( isPositiveZero( v ), true, 'returns +0' );
-
-	v = minabsn( -0.0 );
-	t.strictEqual( isPositiveZero( v ), true, 'returns +0' );
-
-	v = minabsn( +0.0 );
-	t.strictEqual( isPositiveZero( v ), true, 'returns +0' );
-
-	v = minabsn( +0.0, -0.0, +0.0 );
-	t.strictEqual( isPositiveZero( v ), true, 'returns +0' );
-
-	t.end();
-});
-
-tape( 'the function returns the minimum absolute value', function test( t ) {
-	var v;
-
-	v = minabsn( 4.2, 3.14 );
-	t.strictEqual( v, 3.14, 'returns expected value' );
-
-	v = minabsn( -4.2, 3.14 );
-	t.strictEqual( v, 3.14, 'returns expected value' );
-
-	v = minabsn( 3.14 );
-	t.strictEqual( v, 3.14, 'returns expected value' );
-
-	v = minabsn( PINF );
-	t.strictEqual( v, PINF, 'returns expected value' );
-
-	v = minabsn( NINF );
-	t.strictEqual( v, PINF, 'returns expected value' );
-
-	v = minabsn( 4.2, 3.14, -1.0 );
-	t.strictEqual( v, 1.0, 'returns expected value' );
-
-	v = minabsn( 4.2, 3.14, -1.0, -3.14 );
-	t.strictEqual( v, 1.0, 'returns expected value' );
-
-	v = minabsn( PINF, 3.14 );
-	t.strictEqual( v, 3.14, 'returns expected value' );
-
-	v = minabsn( 3.14, PINF );
-	t.strictEqual( v, 3.14, 'returns expected value' );
-
-	v = minabsn( PINF );
-	t.strictEqual( v, PINF, 'returns expected value' );
-
-	v = minabsn( 3.14, 4.2, PINF );
-	t.strictEqual( v, 3.14, 'returns expected value' );
-
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
