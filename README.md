@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import minabsn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-minabsn@deno/mod.js';
+import minabsn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-minabsn@v0.2.0-deno/mod.js';
 ```
 
 #### minabsn( \[x\[, y\[, ...args]]] )
@@ -113,7 +113,7 @@ var v = minabsn();
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import minabsn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-minabsn@deno/mod.js';
+import minabsn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-minabsn@v0.2.0-deno/mod.js';
 
 var x;
 var y;
