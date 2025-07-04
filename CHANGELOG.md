@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-30)
+## Unreleased (2025-07-04)
 
 <section class="reverts">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`7cd4d71`](https://github.com/stdlib-js/stdlib/commit/7cd4d71ebc3d05ae6e55ddedec8ffd614c1f0a86) - **docs:** update examples _(by Athan Reines)_
 -   [`580b0b3`](https://github.com/stdlib-js/stdlib/commit/580b0b3a4535b08100b2a62763723e1fa34bcd9d) - **docs:** resolve NaN return values in `maxabsn` and `minabsn` examples _(by Philipp Burckhardt)_
 -   [`a51fa22`](https://github.com/stdlib-js/stdlib/commit/a51fa22399f36b4d83ba0d189d297af4aa429354) - **docs:** minor clean-up _(by Philipp Burckhardt)_
 -   [`dd6d9cf`](https://github.com/stdlib-js/stdlib/commit/dd6d9cff0105270f0664490f3c89b36d4df89032) - **chore:** minor clean-up _(by Philipp Burckhardt)_
@@ -42,8 +43,9 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Harsh
 -   Philipp Burckhardt
 
