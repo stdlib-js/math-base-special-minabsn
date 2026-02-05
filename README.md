@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import minabsn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-minabsn@deno/mod.js';
+import minabsn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-minabsn@v0.2.3-deno/mod.js';
 ```
 
 #### minabsn( \[x\[, y\[, ...args]]] )
@@ -115,7 +115,7 @@ var v = minabsn();
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@deno/mod.js';
 import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import minabsn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-minabsn@deno/mod.js';
+import minabsn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-minabsn@v0.2.3-deno/mod.js';
 
 var opts = {
     'dtype': 'float64'
